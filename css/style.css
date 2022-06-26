@@ -60,7 +60,7 @@ ol {
 .wrapper {
   box-sizing: border-box;
   width: 1200px;
-  padding: 60px 15px 0;
+  padding: 0 15px;
   margin: auto;
   position: relative;
   z-index: 1;
@@ -111,12 +111,7 @@ ol {
   text-align: center;
   margin: auto;
   max-width: 700px;
-  /* padding: 139px 0; */
   margin-top: 140px;
-}
-
-.logo-mobile {
-  display: none;
 }
 
 .menu__button {
@@ -131,7 +126,6 @@ ol {
   font-family: opensans;
   font-size: 13px;
   color: #fff;
-  /* gap: 30px; */
   margin-left: 30px;
 }
 
@@ -149,7 +143,6 @@ ol {
 }
 
 .menu-link:hover {
-  /* color: #b59f5b; */
   text-decoration: underline;
 }
 
@@ -268,6 +261,9 @@ ol {
   resize: none;
 }
 
+.aside {
+  margin-bottom: 60px;
+}
 
 .header__aside {
   text-transform: uppercase;
@@ -295,7 +291,6 @@ ol {
   min-height: 320px;
   margin-right: 0.33%;
   display: flex;
-  /* flex-direction: column; */
   flex-grow: 1;
   align-items: end;
 }
@@ -365,6 +360,10 @@ ol {
 
 .tags-page__item {
   margin-right: 15px;
+}
+
+.tags-page__item:nth-last-child(1) {
+  margin-right: 0;
 }
 
 .tags-page__link {
@@ -523,17 +522,19 @@ h3 {
   padding: 10px;
   transition: .3s border-color;
   vertical-align: middle;
-
-  border: 1px solid #e6dfc8;
+  background-color: #f4f7f6;
+  border: none;
   box-sizing: border-box;
 }
 
 input:hover {
   box-shadow: 0 0 4px rgba(133, 116, 23, 0.692);
+  background-color: #fff;
 }
 
 input:focus {
   border: 1px solid #e6dfc8;
+  background-color: #fff;
 }
 
 /* скрытый текст*/
@@ -564,8 +565,8 @@ button:hover {
 .field-sub {
   height: 40px;
   transition: .3s border-color;
-
-  border: 1px solid #e6dfc8;
+  background-color: #f4f7f6;
+  border: none;
   width: 100%;
   box-sizing: border-box;
   padding: 6px 12px;
@@ -666,8 +667,6 @@ button:hover {
 }
 
 .shop__item {
-  /* outline: 3px solid #b59f5b; */
-  /* outline-offset: 1.5em; */
   border: 3px solid #b59f5b;
   padding: 1.5em;
   margin-top: -1.5em;
@@ -679,7 +678,6 @@ button:hover {
   font-size: 1.25em;
   font-weight: 700;
   text-transform: uppercase;
-  /* line-height: 2.5em; */
 }
 
 .shop__text {
@@ -896,7 +894,6 @@ button:hover {
   }
 
   .shop__pic {
-    /* width: 100%; */
     padding: 0 1.5em;
   }
 
@@ -916,10 +913,6 @@ button:hover {
     padding: 0 40px;
   }
 
-  .desktop-logo {
-    display: none;
-  }
-
   .header__menu {
     position: absolute;
     top: 30px;
@@ -936,7 +929,7 @@ button:hover {
     justify-content: center;
   }
   
-  .logo-mobile {
+  .header-logo {
     display: block;
     width: 269px;
     margin: 0 auto;
@@ -978,6 +971,10 @@ button:hover {
     padding-bottom: 60px;
   }
 
+  .page__sidebar {
+    padding-top: 60px;
+  }
+
   .container__shop {
     flex-direction: column;
     padding: 0 20px;
@@ -989,10 +986,4 @@ button:hover {
 
   .shop:nth-child(2n) {
     margin-top: 4em;
-  }
-/* 
-  .shop__item {
-    width: 100%;
-  }  */
-
   }
